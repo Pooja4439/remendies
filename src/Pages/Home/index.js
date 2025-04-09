@@ -13,6 +13,8 @@ import HomeCat from "../../components/HomeCat";
 import card1 from "../../assets/images/card1.png";
 import card2 from "../../assets/images/card2.png";
 import news from "../../assets/images/news.png";
+import { IoIosMail } from "react-icons/io";
+import LabTest from "../../components/LabTest";
 const Home = () => {
     return (
         <>
@@ -121,7 +123,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
+            <LabTest/> 
             <section className="newsLetterSection mt-3 mb-3 d-flex align-items-center">
                 <div className="container">
                     <div className="row">
@@ -129,6 +131,13 @@ const Home = () => {
                          <p className="text-white mb-1">$20 discount for your first order</p>
                          <h4 className="text-white">Join Our newsletter and get...</h4>
                          <p className="text-light"> Join Our email subscription now to get updates<br/>on promotions and coupans.</p>
+
+
+                         <form>
+                         <IoIosMail />
+                            <input type ="text" placeholder="Your Email Address"/>
+                            <Button>Subscribe</Button>
+                         </form>
                         </div>
                         <div className="col-md-6">
                             <img src={news} class="w-100 img-fluid"/>
@@ -136,6 +145,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+           
+         
         </>
     );
 };

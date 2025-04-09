@@ -4,7 +4,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Import arrow 
 import banner1 from "../../assets/images/banner1.jpg";
 import banner2 from "../../assets/images/banner2.jpg";
 import banner3 from "../../assets/images/banner3.jpg";
-
+import banner5 from "../../assets/images/banner5.jpg";
 
 
 // Custom Left Arrow Component
@@ -48,6 +48,9 @@ const HomeBanner = () => {
                     </div>
                     <div className="item">
                         <img src={banner3} alt="Banner 3" className="w-100" />
+                    </div>
+                    <div className="item">
+                        <img src={banner5} alt="Banner 3" className="w-100" />
                     </div>
                 </Slider>
             </div>
